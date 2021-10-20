@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main-->
+        <!--Мои места-->
         <scene sceneID="FoZ-KK-F5f">
             <objects>
                 <tableViewController id="pD6-17-yKf" customClass="MainViewController" customModule="MyPlaces" customModuleProvider="target" sceneMemberID="viewController">
@@ -30,7 +30,7 @@
                             <outlet property="delegate" destination="pD6-17-yKf" id="d0u-J2-3Pt"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Main" id="74j-4N-iwR"/>
+                    <navigationItem key="navigationItem" title="Мои места" id="74j-4N-iwR"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sv3-vZ-xWe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,6 +43,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qih-Dj-Kb1">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="25"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="pD6-17-yKf" kind="relationship" relationship="rootViewController" id="giz-x2-efB"/>

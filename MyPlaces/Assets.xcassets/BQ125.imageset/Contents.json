@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "BQ125.png",
+      "filename" : "BQ125.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "BQ125-1.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "BQ125-2.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }

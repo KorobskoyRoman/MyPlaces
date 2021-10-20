@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Краснодарский парень.jpeg",
+      "filename" : "mapIcon.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Краснодарский парень-1.jpeg",
+      "filename" : "mapIcon-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Краснодарский парень-2.jpeg",
+      "filename" : "mapIcon-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

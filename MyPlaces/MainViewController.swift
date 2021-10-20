@@ -9,11 +9,11 @@ import UIKit
 
 class MainViewController: UITableViewController {
     
+//    let resizeImage = UIView.ContentMode.scaleToFill
     let restaurantNames = ["Краснодарский парень", "Fарш", "BQ125"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     // MARK: - Table view data source
@@ -26,19 +26,31 @@ class MainViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
-        //cell.textLabel?.text = restaurantNames[indexPath.row] //Deprecated iOS 13+
+//        cell.textLabel?.text = restaurantNames[indexPath.row] //Deprecated iOS 13+
+//        cell.imageView?.image = UIImage(named: restaurantNames[indexPath.row])
+//        cell.imageView?.layer.cornerRadius = 85 / 2
+//        cell.imageView?.clipsToBounds = true
         
         var content = cell.defaultContentConfiguration()
         content.image = UIImage(named: restaurantNames[indexPath.row])
+
         content.text = restaurantNames[indexPath.row]
+
+        content.imageProperties.maximumSize.width = cell.frame.size.width - 5
+        content.imageProperties.maximumSize.height = cell.frame.size.height - 5
+        content.imageProperties.cornerRadius = cell.frame.size.height / 2
+
         cell.contentConfiguration = content
         
         return cell
     }
     
+    //MARK: - Table view delegate
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
     }
+    
     
     /*
     // MARK: - Navigation
