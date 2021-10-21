@@ -24,23 +24,13 @@ class MainViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomTableViewCell
         
-//        cell.textLabel?.text = restaurantNames[indexPath.row] //Deprecated iOS 13+
-//        cell.imageView?.image = UIImage(named: restaurantNames[indexPath.row])
-//        cell.imageView?.layer.cornerRadius = 85 / 2
-//        cell.imageView?.clipsToBounds = true
-        
-        var content = cell.defaultContentConfiguration()
-        content.image = UIImage(named: restaurantNames[indexPath.row])
-
-        content.text = restaurantNames[indexPath.row]
-
-        content.imageProperties.maximumSize.width = cell.frame.size.width - 5
-        content.imageProperties.maximumSize.height = cell.frame.size.height - 5
-        content.imageProperties.cornerRadius = cell.frame.size.height / 2
-
-        cell.contentConfiguration = content
+        cell.nameLabel.text = restaurantNames[indexPath.row]
+        cell.imageOfPlace.image = UIImage(named: restaurantNames[indexPath.row])
+        cell.imageOfPlace.layer.cornerRadius = cell.imageOfPlace.frame.size.height / 2
+        cell.imageOfPlace.clipsToBounds = true
+        cell.imageOfPlace.contentMode = .scaleAspectFill
         
         return cell
     }
@@ -48,7 +38,7 @@ class MainViewController: UITableViewController {
     //MARK: - Table view delegate
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 70
+        return 85
     }
     
     
