@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "BQ125.jpeg",
+      "filename" : "camera3.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "BQ125-1.jpeg",
+      "filename" : "camera3-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "BQ125-2.jpeg",
+      "filename" : "camera3-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
