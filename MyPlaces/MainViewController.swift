@@ -46,14 +46,24 @@ class MainViewController: UITableViewController {
     }
 
     //MARK: Table view delegate
-    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        
+//deprecated iOS 13+
+//    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+//
+//        let place = places[indexPath.row]
+//        let deleteAction = UITableViewRowAction(style: .default, title: "Удалить") { _, _ in
+//            StorageManager.deleteObject(place)
+//            tableView.deleteRows(at: [indexPath], with: .automatic)
+//        }
+//        return [deleteAction]
+//    }
+
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let place = places[indexPath.row]
-        let deleteAction = UITableViewRowAction(style: .default, title: "Удалить") { _, _ in
-            StorageManager.deleteObject(place)
+        let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { _,_,_ in StorageManager.deleteObject(place)
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
-        return [deleteAction]
+        let swipeAction = UISwipeActionsConfiguration(actions: [deleteAction]) //взаимствовано с хабра
+        return swipeAction
     }
     
     //создаем сигвей для сохранения значений из NewPlaceViewController в наш основной

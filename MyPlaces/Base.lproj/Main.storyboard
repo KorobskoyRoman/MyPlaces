@@ -136,7 +136,7 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="19" id="s54-Bu-rW9"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-UltraLightItalic" family="Avenir Next" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -174,7 +174,7 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="19" id="Rlj-DI-WSj"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-UltraLightItalic" family="Avenir Next" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -212,7 +212,7 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="19" id="iIK-dI-W3u"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-UltraLightItalic" family="Avenir Next" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -243,7 +243,7 @@
                             <outlet property="delegate" destination="mKk-Jt-1Xp" id="gfx-Vg-dbM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Новое место" id="X2o-so-4hb">
+                    <navigationItem key="navigationItem" title="Новое место" largeTitleDisplayMode="always" id="X2o-so-4hb">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Sgi-aW-bva">
                             <connections>
                                 <action selector="cancelAction:" destination="mKk-Jt-1Xp" id="Uzp-kT-1Bi"/>
