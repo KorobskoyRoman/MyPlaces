@@ -44,7 +44,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         searchController.obscuresBackgroundDuringPresentation = false //включаем взаимодествие с контроллером
         searchController.searchBar.placeholder = "Поиск"
         navigationItem.searchController = searchController //интегрируем строку в навигейшн бар
-        definesPresentationContext = true //при переходе на другой экран поиск убираем
+        definesPresentationContext = true //при переходе на другой экран поиск убираеM
     }
 
     // MARK: - Table view data source

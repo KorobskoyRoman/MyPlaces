@@ -66,16 +66,22 @@ class NewPlaceViewController: UITableViewController {
         }
     }
     
+    // NARK: Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier != "showMap" {return}
+        let mapVC = segue.destination as! MapViewController
+        
+        //настраиваем значения по умолчанию для добавления данных из нашего контроллера
+        mapVC.place.name = placeName.text!
+        mapVC.place.type = placeType.text
+        mapVC.place.imageData = placeImage.image?.pngData()
+    }
+    
     func savePlace() { //метод для сохранения места
         
 
-        var image: UIImage?
-        
-        if imageIsChanged {
-            image = placeImage.image //изменяем на выбранную картинку
-        } else {
-            image = #imageLiteral(resourceName: "food") //в ином случае присваиваем значением по умолчанию
-        }
+        let image = imageIsChanged ? placeImage.image : #imageLiteral(resourceName: "food") //изменяем на выбранную картинку на из контроллера, в ином случае присваиваем значением по умолчанию
         let imageData = image?.pngData()
         
         let newPlace = Place(name: placeName.text!,

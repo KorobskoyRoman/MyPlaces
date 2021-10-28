@@ -19,6 +19,7 @@
 		9C4366C0272231C500970A4B /* Place Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4366BF272231C500970A4B /* Place Model.swift */; };
 		9C4366C227223F9200970A4B /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4366C127223F9200970A4B /* NewPlaceViewController.swift */; };
 		9C4366C42723590600970A4B /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4366C32723590600970A4B /* StorageManager.swift */; };
+		9CD9EEC8272B2193004E029A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD9EEC7272B2193004E029A /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		9C4366BF272231C500970A4B /* Place Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Place Model.swift"; sourceTree = "<group>"; };
 		9C4366C127223F9200970A4B /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
 		9C4366C32723590600970A4B /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		9CD9EEC7272B2193004E029A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				9C4366BB271EF94900970A4B /* MainViewController.swift */,
 				9C4366BF272231C500970A4B /* Place Model.swift */,
 				9C4366C127223F9200970A4B /* NewPlaceViewController.swift */,
+				9CD9EEC7272B2193004E029A /* MapViewController.swift */,
 				9C4366C32723590600970A4B /* StorageManager.swift */,
 				9C4366BD27222B7500970A4B /* CustomTableViewCell.swift */,
 				9C2BD73A2726F37B004EE3CC /* RatingControl.swift */,
@@ -228,6 +231,7 @@
 				9C4366C227223F9200970A4B /* NewPlaceViewController.swift in Sources */,
 				9C4366AA271EF4CE00970A4B /* SceneDelegate.swift in Sources */,
 				9C4366C42723590600970A4B /* StorageManager.swift in Sources */,
+				9CD9EEC8272B2193004E029A /* MapViewController.swift in Sources */,
 				9C2BD73B2726F37B004EE3CC /* RatingControl.swift in Sources */,
 				9C4366BC271EF94900970A4B /* MainViewController.swift in Sources */,
 				9C4366C0272231C500970A4B /* Place Model.swift in Sources */,
